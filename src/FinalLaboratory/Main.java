@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class Main {
     static int option=-1;
-    static String FileName;
     static MovieCatalogue moviecatalogue=new ImplementMovieCatalogue();
 
     public static void main (String[] args) throws ExceptionsDataAccess, IOException {

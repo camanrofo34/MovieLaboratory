@@ -1,23 +1,9 @@
 package Domain;
 
-public class Movie {
-    private String name;
+public record Movie(String name) {
 
-    public Movie() {
-    }
-
-    public Movie(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.Contract(pure = true)
     @Override
     public String toString() {
         return "Movie{" +
